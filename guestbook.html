@@ -3,293 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Guestbook — JadeOS</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/windows.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="windows.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
 
-    <main class="desktop" id="desktop">
+    <main class="desktop">
 
-        <!-- Desktop Navigation -->
-        <nav class="desktop-icons" aria-label="Desktop applications">
+        <div class="desktop-icons">
 
-            <a href="../index.html" class="desktop-icon">
-                <span class="icon">🏠</span>
-                <span class="icon-label">Home</span>
+            <a href="index.html" class="desktop-icon">
+                <span class="desktop-icon-image">🍓</span>
+                <span>Home</span>
             </a>
 
             <a href="work.html" class="desktop-icon">
-                <span class="icon">🍓</span>
-                <span class="icon-label">My Work</span>
+                <span class="desktop-icon-image">📁</span>
+                <span>My Work</span>
             </a>
 
             <a href="about.html" class="desktop-icon">
-                <span class="icon">👩🏻‍💻</span>
-                <span class="icon-label">About Me</span>
+                <span class="desktop-icon-image">💌</span>
+                <span>About Me</span>
             </a>
 
             <a href="contact.html" class="desktop-icon">
-                <span class="icon">💌</span>
-                <span class="icon-label">Contact</span>
+                <span class="desktop-icon-image">✉️</span>
+                <span>Contact</span>
             </a>
 
-        </nav>
+        </div>
 
 
-        <!-- Guestbook Window -->
-        <section class="window page-window guestbook-window">
+        <section class="window guestbook-window" id="guestbook-window">
 
-            <header class="window-titlebar">
+            <div class="titlebar">
 
-                <div class="window-title">
-                    <span>📖</span>
-                    <span>Strawberry Milk Guestbook</span>
+                <div class="titlebar-title">
+                    📖 Guestbook
                 </div>
 
                 <div class="window-controls">
-                    <button
-                        class="window-control minimize"
-                        aria-label="Minimize window"
-                    >
-                        −
-                    </button>
-
-                    <button
-                        class="window-control maximize"
-                        aria-label="Maximize window"
-                    >
-                        □
-                    </button>
-
-                    <button
-                        class="window-control close"
-                        aria-label="Close window"
-                    >
-                        ×
-                    </button>
+                    <button class="window-control minimize" aria-label="Minimize">−</button>
+                    <button class="window-control maximize" aria-label="Maximize">□</button>
+                    <button class="window-control close" aria-label="Close">×</button>
                 </div>
 
-            </header>
+            </div>
 
 
-            <div class="window-content">
+            <div class="window-content guestbook-content">
 
-                <!-- Guestbook Introduction -->
-                <header class="page-header">
+                <div class="page-header">
 
-                    <p class="eyebrow">GUESTBOOK</p>
-
-                    <h1>Leave a little note ♡</h1>
-
-                    <p>
-                        You found the guestbook!
-                        Leave a little message before you go.
-                        🍓
+                    <p class="eyebrow">
+                        LEAVE A LITTLE NOTE
                     </p>
 
-                </header>
+                    <h1>Guestbook ♡</h1>
+
+                    <p>
+                        Say hi, leave a little message, or tell me what you think!
+                    </p>
+
+                </div>
 
 
-                <!-- Guestbook Form -->
-                <section class="guestbook-form-section">
+                <form class="guestbook-form" id="guestbook-form">
 
-                    <h2>Sign the guestbook ✍️</h2>
+                    <div class="form-group">
 
-                    <form
-                        class="guestbook-form"
-                        id="guestbook-form"
-                    >
+                        <label for="guest-name">
+                            Your name
+                        </label>
 
-                        <div class="form-group">
-
-                            <label for="guest-name">
-                                Your name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="guest-name"
-                                name="name"
-                                placeholder="Your name..."
-                                maxlength="40"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="guest-message">
-                                Your note
-                            </label>
-
-                            <textarea
-                                id="guest-message"
-                                name="message"
-                                rows="5"
-                                placeholder="Write something sweet..."
-                                maxlength="300"
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <div class="guestbook-form-footer">
-
-                            <span class="character-count">
-                                <span id="character-count">0</span>/300
-                            </span>
-
-                            <button
-                                type="submit"
-                                class="button"
-                            >
-                                Leave a note 🍓
-                            </button>
-
-                        </div>
-
-                    </form>
-
-                </section>
-
-
-                <!-- Guestbook Entries -->
-                <section
-                    class="guestbook-entries-section"
-                    aria-labelledby="entries-heading"
-                >
-
-                    <div class="section-heading">
-
-                        <div>
-                            <p class="eyebrow">THE WALL</p>
-
-                            <h2 id="entries-heading">
-                                Sweet notes 💌
-                            </h2>
-                        </div>
-
-                        <span
-                            class="guestbook-count"
-                            id="guestbook-count"
+                        <input
+                            type="text"
+                            id="guest-name"
+                            name="name"
+                            maxlength="30"
+                            placeholder="Strawberry lover..."
+                            required
                         >
-                            0 notes
-                        </span>
 
                     </div>
 
 
-                    <div
-                        class="guestbook-entries"
-                        id="guestbook-entries"
-                        aria-live="polite"
-                    >
+                    <div class="form-group">
 
-                        <!--
-                            Guestbook entries will be inserted here
-                            by guestbook.js.
-                        -->
+                        <label for="guest-message">
+                            Your message
+                        </label>
 
-                        <div class="empty-guestbook" id="empty-guestbook">
+                        <textarea
+                            id="guest-message"
+                            name="message"
+                            maxlength="200"
+                            placeholder="Write something sweet ♡"
+                            required
+                        ></textarea>
 
-                            <span class="empty-icon">
-                                🍓
-                            </span>
-
-                            <h3>
-                                It's a little quiet here...
-                            </h3>
-
-                            <p>
-                                Be the first person to leave a note!
-                            </p>
-
+                        <div class="character-count" id="character-count">
+                            0 / 200
                         </div>
 
                     </div>
 
-                </section>
+
+                    <button type="submit" class="button primary-button">
+                        Sign the guestbook 🍓
+                    </button>
+
+                </form>
+
+
+                <div class="guestbook-divider">
+                    ♡ ♡ ♡
+                </div>
+
+
+                <div class="guestbook-list-header">
+
+                    <h2>
+                        Little notes
+                    </h2>
+
+                    <span id="guestbook-count">
+                        0 entries
+                    </span>
+
+                </div>
+
+
+                <div class="guestbook-entries" id="guestbook-entries">
+
+                    <div class="empty-guestbook" id="empty-guestbook">
+
+                        <span>🍓</span>
+
+                        <p>
+                            No notes yet!
+                            Be the first to leave one. ♡
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="page-footer">
+
+                    <a href="index.html" class="button secondary-button">
+                        ← Back home
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Taskbar -->
         <footer class="taskbar">
 
-            <a
-                href="../index.html"
-                class="start-button"
-            >
-                🍓 <span>Start</span>
-            </a>
+            <button class="start-button" id="start-button">
+                🍓 Start
+            </button>
 
+            <div class="taskbar-divider"></div>
 
-            <nav
-                class="taskbar-apps"
-                aria-label="Open applications"
-            >
+            <div class="taskbar-spacer"></div>
 
-                <a
-                    href="work.html"
-                    class="taskbar-app"
-                >
-                    🍓 <span>Work</span>
-                </a>
-
-                <a
-                    href="about.html"
-                    class="taskbar-app"
-                >
-                    👩🏻 <span>About</span>
-                </a>
-
-                <a
-                    href="contact.html"
-                    class="taskbar-app"
-                >
-                    💌 <span>Contact</span>
-                </a>
-
-                <a
-                    href="guestbook.html"
-                    class="taskbar-app active"
-                >
-                    📖 <span>Guestbook</span>
-                </a>
-
-            </nav>
-
-
-            <div class="system-tray">
-
-                <span aria-hidden="true">
-                    🥛
-                </span>
-
-                <time class="clock">
-                    12:00 AM
-                </time>
-
+            <div class="taskbar-clock" id="clock">
+                12:00 PM
             </div>
 
         </footer>
@@ -297,11 +191,10 @@
     </main>
 
 
-    <!-- JavaScript -->
-    <script src="../js/desktop.js"></script>
-    <script src="../js/windows.js"></script>
-    <script src="../js/guestbook.js"></script>
-    <script src="../js/effects.js"></script>
+    <script src="desktop.js"></script>
+    <script src="windows.js"></script>
+    <script src="guestbook.js"></script>
+    <script src="effects.js"></script>
 
 </body>
 </html>
