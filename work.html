@@ -5,171 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Work — JadeOS</title>
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/windows.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="windows.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
 
-    <main class="desktop" id="desktop">
+    <main class="desktop">
 
-        <!-- Desktop Navigation -->
-        <nav class="desktop-icons" aria-label="Desktop applications">
+        <div class="desktop-icons">
 
-            <a href="../index.html" class="desktop-icon">
-                <span class="icon">🏠</span>
-                <span class="icon-label">Home</span>
+            <a href="index.html" class="desktop-icon">
+                <span class="desktop-icon-image">🍓</span>
+                <span>Home</span>
             </a>
 
             <a href="about.html" class="desktop-icon">
-                <span class="icon">👩🏻‍💻</span>
-                <span class="icon-label">About Me</span>
+                <span class="desktop-icon-image">💌</span>
+                <span>About Me</span>
             </a>
 
             <a href="contact.html" class="desktop-icon">
-                <span class="icon">💌</span>
-                <span class="icon-label">Contact</span>
+                <span class="desktop-icon-image">✉️</span>
+                <span>Contact</span>
             </a>
 
             <a href="guestbook.html" class="desktop-icon">
-                <span class="icon">📖</span>
-                <span class="icon-label">Guestbook</span>
+                <span class="desktop-icon-image">📖</span>
+                <span>Guestbook</span>
             </a>
 
-        </nav>
+        </div>
 
 
-        <!-- Work Window -->
-        <section class="window page-window work-window">
+        <section class="window work-window" id="work-window">
 
-            <header class="window-titlebar">
+            <div class="titlebar">
 
-                <div class="window-title">
-                    <span>🍓</span>
-                    <span>My Work</span>
+                <div class="titlebar-title">
+                    📁 My Work
                 </div>
 
                 <div class="window-controls">
-                    <button class="window-control minimize" aria-label="Minimize window">−</button>
-                    <button class="window-control maximize" aria-label="Maximize window">□</button>
-                    <button class="window-control close" aria-label="Close window">×</button>
+                    <button class="window-control minimize" aria-label="Minimize">−</button>
+                    <button class="window-control maximize" aria-label="Maximize">□</button>
+                    <button class="window-control close" aria-label="Close">×</button>
                 </div>
 
-            </header>
+            </div>
 
 
-            <div class="window-content">
+            <div class="window-content work-content">
 
-                <header class="page-header">
-                    <p class="eyebrow">PORTFOLIO</p>
-                    <h1>My Work 🍓</h1>
+                <div class="page-header">
+
+                    <p class="eyebrow">MY LITTLE PROJECT FOLDER</p>
+
+                    <h1>Things I've made ♡</h1>
 
                     <p>
-                        A collection of projects, experiments,
-                        and things I've made.
+                        A collection of projects, experiments, and designs.
                     </p>
-                </header>
+
+                </div>
 
 
-                <!-- Projects will be added later -->
-                <section class="projects" aria-label="Portfolio projects">
+                <div class="projects-grid">
 
                     <article class="project-card">
-                        <div class="project-placeholder">
+
+                        <div class="project-icon">
                             🍓
                         </div>
 
                         <div class="project-info">
-                            <span class="project-category">UX DESIGN</span>
-                            <h2>Project Coming Soon</h2>
+
+                            <span class="project-type">
+                                UX / UI
+                            </span>
+
+                            <h2>Project One</h2>
 
                             <p>
-                                A new project will be added here soon.
+                                A cute little project I'm working on.
+                                More details coming soon!
                             </p>
+
                         </div>
+
                     </article>
 
 
                     <article class="project-card">
-                        <div class="project-placeholder">
+
+                        <div class="project-icon">
                             🥛
                         </div>
 
                         <div class="project-info">
-                            <span class="project-category">WEB DESIGN</span>
-                            <h2>Project Coming Soon</h2>
+
+                            <span class="project-type">
+                                WEB DESIGN
+                            </span>
+
+                            <h2>Project Two</h2>
 
                             <p>
-                                A new project will be added here soon.
+                                Another fun design experiment.
+                                Check back later for the full case study!
                             </p>
+
                         </div>
+
                     </article>
 
 
                     <article class="project-card">
-                        <div class="project-placeholder">
-                            💿
+
+                        <div class="project-icon">
+                            🌷
                         </div>
 
                         <div class="project-info">
-                            <span class="project-category">CREATIVE</span>
-                            <h2>Project Coming Soon</h2>
+
+                            <span class="project-type">
+                                CREATIVE CODE
+                            </span>
+
+                            <h2>Project Three</h2>
 
                             <p>
-                                A new project will be added here soon.
+                                A playful interactive project made with code.
                             </p>
+
                         </div>
+
                     </article>
 
-                </section>
+                </div>
+
+
+                <div class="page-footer">
+
+                    <a href="about.html" class="button secondary-button">
+                        ← About me
+                    </a>
+
+                    <a href="contact.html" class="button primary-button">
+                        Contact me ♡
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- Taskbar -->
         <footer class="taskbar">
 
-            <a href="../index.html" class="start-button">
-                🍓 <span>Start</span>
-            </a>
+            <button class="start-button" id="start-button">
+                🍓 Start
+            </button>
 
-            <nav class="taskbar-apps" aria-label="Open applications">
+            <div class="taskbar-divider"></div>
 
-                <a href="work.html" class="taskbar-app active">
-                    🍓 <span>Work</span>
-                </a>
+            <div class="taskbar-spacer"></div>
 
-                <a href="about.html" class="taskbar-app">
-                    👩🏻 <span>About</span>
-                </a>
-
-                <a href="contact.html" class="taskbar-app">
-                    💌 <span>Contact</span>
-                </a>
-
-            </nav>
-
-            <div class="system-tray">
-                <span aria-hidden="true">🥛</span>
-                <time class="clock">12:00 AM</time>
+            <div class="taskbar-clock" id="clock">
+                12:00 PM
             </div>
 
         </footer>
 
     </main>
 
-    <script src="../js/desktop.js"></script>
-    <script src="../js/windows.js"></script>
-    <script src="../js/effects.js"></script>
+
+    <script src="desktop.js"></script>
+    <script src="windows.js"></script>
+    <script src="effects.js"></script>
 
 </body>
 </html>
