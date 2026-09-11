@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadeOS — Strawberry Milk Edition</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/windows.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <main class="desktop" id="desktop">
+
+        <!-- Desktop Icons -->
+        <nav class="desktop-icons" aria-label="Desktop applications">
+
+            <a href="pages/work.html" class="desktop-icon">
+                <span class="icon">🍓</span>
+                <span class="icon-label">My Work</span>
+            </a>
+
+            <a href="pages/about.html" class="desktop-icon">
+                <span class="icon">👩🏻‍💻</span>
+                <span class="icon-label">About Me</span>
+            </a>
+
+            <a href="pages/contact.html" class="desktop-icon">
+                <span class="icon">💌</span>
+                <span class="icon-label">Contact</span>
+            </a>
+
+            <a href="pages/guestbook.html" class="desktop-icon">
+                <span class="icon">📖</span>
+                <span class="icon-label">Guestbook</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Welcome Window -->
+        <section class="window welcome-window" id="welcome-window">
+
+            <header class="window-titlebar">
+                <div class="window-title">
+                    <span>🍓</span>
+                    <span>Welcome to JadeOS</span>
+                </div>
+
+                <div class="window-controls">
+                    <button class="window-control minimize" aria-label="Minimize window">−</button>
+                    <button class="window-control maximize" aria-label="Maximize window">□</button>
+                    <button class="window-control close" aria-label="Close window">×</button>
+                </div>
+            </header>
+
+            <div class="window-content welcome-content">
+
+                <div class="welcome-strawberry" aria-hidden="true">
+                    🍓
+                </div>
+
+                <p class="eyebrow">STRAWBERRY MILK EDITION</p>
+
+                <h1>Hi, I'm Jade! ♡</h1>
+
+                <p>
+                    Welcome to my little corner of the internet.
+                    I'm a UX designer and creative person who loves
+                    making digital spaces feel thoughtful, playful,
+                    and human.
+                </p>
+
+                <div class="welcome-actions">
+                    <a href="pages/work.html" class="button">
+                        Explore my work 🍓
+                    </a>
+
+                    <a href="pages/about.html" class="button secondary">
+                        Get to know me
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Taskbar -->
+        <footer class="taskbar">
+
+            <button class="start-button" id="start-button">
+                🍓 <span>Start</span>
+            </button>
+
+            <nav class="taskbar-apps" aria-label="Open applications">
+
+                <a href="pages/work.html" class="taskbar-app">
+                    🍓 <span>Work</span>
+                </a>
+
+                <a href="pages/about.html" class="taskbar-app">
+                    👩🏻 <span>About</span>
+                </a>
+
+                <a href="pages/contact.html" class="taskbar-app">
+                    💌 <span>Contact</span>
+                </a>
+
+            </nav>
+
+            <div class="system-tray">
+                <span aria-hidden="true">🥛</span>
+                <time id="clock">12:00 AM</time>
+            </div>
+
+        </footer>
+
+
+        <!-- Start Menu -->
+        <div class="start-menu" id="start-menu">
+
+            <div class="start-menu-header">
+                <span>🍓</span>
+                <strong>JadeOS</strong>
+            </div>
+
+            <nav class="start-menu-links">
+
+                <a href="pages/work.html">
+                    🍓
+                    <span>My Work</span>
+                </a>
+
+                <a href="pages/about.html">
+                    👩🏻‍💻
+                    <span>About Me</span>
+                </a>
+
+                <a href="pages/contact.html">
+                    💌
+                    <span>Contact</span>
+                </a>
+
+                <a href="pages/guestbook.html">
+                    📖
+                    <span>Guestbook</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+    </main>
+
+    <script src="js/desktop.js"></script>
+    <script src="js/windows.js"></script>
+    <script src="js/effects.js"></script>
+
+</body>
+</html>

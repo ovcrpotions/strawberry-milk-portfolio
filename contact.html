@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — JadeOS</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/windows.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <main class="desktop" id="desktop">
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-icons" aria-label="Desktop applications">
+
+            <a href="../index.html" class="desktop-icon">
+                <span class="icon">🏠</span>
+                <span class="icon-label">Home</span>
+            </a>
+
+            <a href="work.html" class="desktop-icon">
+                <span class="icon">🍓</span>
+                <span class="icon-label">My Work</span>
+            </a>
+
+            <a href="about.html" class="desktop-icon">
+                <span class="icon">👩🏻‍💻</span>
+                <span class="icon-label">About Me</span>
+            </a>
+
+            <a href="guestbook.html" class="desktop-icon">
+                <span class="icon">📖</span>
+                <span class="icon-label">Guestbook</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Contact Window -->
+        <section class="window page-window contact-window">
+
+            <header class="window-titlebar">
+
+                <div class="window-title">
+                    <span>💌</span>
+                    <span>Contact</span>
+                </div>
+
+                <div class="window-controls">
+                    <button class="window-control minimize" aria-label="Minimize window">−</button>
+                    <button class="window-control maximize" aria-label="Maximize window">□</button>
+                    <button class="window-control close" aria-label="Close window">×</button>
+                </div>
+
+            </header>
+
+
+            <div class="window-content">
+
+                <header class="page-header">
+                    <p class="eyebrow">MAIL</p>
+                    <h1>Let's chat! 💌</h1>
+
+                    <p>
+                        Have a project, question, or just want to say hello?
+                        I'd love to hear from you.
+                    </p>
+                </header>
+
+
+                <form class="contact-form" id="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Strawberry fan..."
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reason">
+                            What are we making today?
+                        </label>
+
+                        <select id="reason" name="reason">
+
+                            <option value="">
+                                Select one...
+                            </option>
+
+                            <option value="ux">
+                                UX / Design project
+                            </option>
+
+                            <option value="web">
+                                Website / Development
+                            </option>
+
+                            <option value="collaboration">
+                                Collaboration
+                            </option>
+
+                            <option value="hello">
+                                Just saying hi ♡
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Your message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="7"
+                            placeholder="Write something sweet..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="button">
+                        Send with love 🍓
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Taskbar -->
+        <footer class="taskbar">
+
+            <a href="../index.html" class="start-button">
+                🍓 <span>Start</span>
+            </a>
+
+            <nav class="taskbar-apps" aria-label="Open applications">
+
+                <a href="work.html" class="taskbar-app">
+                    🍓 <span>Work</span>
+                </a>
+
+                <a href="about.html" class="taskbar-app">
+                    👩🏻 <span>About</span>
+                </a>
+
+                <a href="contact.html" class="taskbar-app active">
+                    💌 <span>Contact</span>
+                </a>
+
+            </nav>
+
+            <div class="system-tray">
+                <span aria-hidden="true">🥛</span>
+                <time class="clock">12:00 AM</time>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="../js/desktop.js"></script>
+    <script src="../js/windows.js"></script>
+    <script src="../js/effects.js"></script>
+
+</body>
+</html>
